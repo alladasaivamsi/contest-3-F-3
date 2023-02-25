@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {   
+    background-color: lightcyan;
+} 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;    
+    color: white;
+    background-color: black;
+    width: 100vw;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.data {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#registerform {
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#container1 { 
+    min-width: 50%;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid black;    
+    border-radius: 6px;
+    cursor:pointer;
+    margin-top: 80px;
+    /* display: none; */
+}
+
+.container1 header {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    justify-content: start;
+}
+
+.container1 form {
+    margin-top: 20px;
+}
+
+form .field {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+form .field .input-field {
+    height: 40px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid black;
+}
+
+.input-field input::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+.button {
+    margin: 30px 0 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: lightseagreen;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    color: black;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.button button:hover {
+    opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Password-error .error-text {
+    color: red;
+    margin-top: 10px;
+    font-weight: 600;
+    display: none;
+}
+
+.email-error .error-text{
+    color: red;
+    margin-top: 10px;
+    font-weight: 600;
+    display: none;
+}
+
+.confirm-password-error .error-text {
+    color: red;
+    margin-top: 10px;
+    font-weight: 600;
+    display: none;
+}
+
+.name-error .name-errorText {
+    color: red;
+    margin-top: 10px;
+    font-weight: 600;
+    display: none;
+}

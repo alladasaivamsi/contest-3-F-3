@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="data">
+        <div class="header">
+            <h2 id="heading-name">Teacher Portal</h2>
+            <ul id="heading-links">
+                <li class="signup"><a href="signup.html">Signup</a></li>
+                <li class="login"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div id="coupon">
+            <div id="container4">
+                <div id="coupon-heading">
+                </div>
+                <div id="coupon-card">
+                    <span id="cpnCode"></span>
+                    <input type="button" id="cpnBtn" value="COPY CODE" onclick="createRandomCoupon(16)">
+                </div>            
+            </div>
+        </div>
+       <div id="registerform">
+            <section class="container1" id="container1">
+                <header>Teachers Dashboard</header><br>
+                <p>Random Coupon Code : <span id="coupon-code"></span></p><br>
+                <p>Welcome back <span id="dashboard-name"></span></p><br>
+                <p>Your Email ID : <span id="dashboard-email"></span></p><br>
+                <header>Change Password</header>
+                <form>
+                    <div class="field old-password-field">
+                        <div class="input-field">
+                            <input type="password" placeholder="Enter your Old Password" class="oPassword" id="password">
+                        </div>
+                    </div>   
+                    <div class="field new-password-field">
+                        <div class="input-field">
+                            <input type="password" placeholder="Enter your New Password" class="nPassword" id="password">
+                        </div>
+                        <span class="error Password-error">
+                            <p class="error-text passError"></p>
+                        </span>
+                    </div>   
+    
+                    <div class="field confirm-password-field">
+                        <div class="input-field">
+                            <input type="password" placeholder="Confirm New Password" class="cPassword" id="cPassword">
+                        </div>
+                        <span class="error confirm-password-error">
+                            <p class="error-text cPassword-errorText"></p>
+                        </span>
+                    </div>   
+                    <div class="input-field button">
+                        <button type="submit" onclick="changePassword()" id="change-passwordBtn">Change</button>
+                        <button type="submit" onclick="logout()" id="logoutBtn">Logout</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

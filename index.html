@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="data">
+        <div class="header">
+            <h2 id="heading-name">Teacher Portal</h2>
+            <ul id="heading-links">
+                <li class="signup"><a href="signup.html">Signup</a></li>
+                <li class="login"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+       <div id="registerform">
+            <section class="container1" id="container1">
+                <header>Teacher Signup</header>
+                <form action="login.html" onclick="validateForm(event);signupForm();">  
+                    <div class="field name-field">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your Full Name" class="fname" id="fname">
+                        </div> 
+                        <span class="error name-error">
+                            <p class="error-text name-errorText"></p>
+                        </span>                         
+                    </div>       
+                    <div class="field email-field">
+                        <div class="input-field">
+                            <input type="email" placeholder="Enter your email" class="email" id="email">
+                        </div>
+                        <span class="error email-error">
+                            <p class="error-text email-errorText"></p>
+                        </span>
+                    </div>        
+                    <div class="field create-password">
+                        <div class="input-field">
+                            <input type="password" placeholder="Enter your Password" class="password" id="password">
+                        </div>
+                        <span class="error Password-error">
+                            <p class="error-text passError"></p>
+                        </span>
+                    </div>   
+                    <div class="field confirm-password-field">
+                        <div class="input-field">
+                            <input type="password" placeholder="Confirm Password" class="cPassword" id="cPassword">
+                        </div>
+                        <span class="error confirm-password-error">
+                            <p class="error-text cPassword-errorText"></p>
+                        </span>
+                    </div>                      
+                    <div class="input-field button" id="signup">
+                        <button type="submit" id="submit-btn"><a href="login.html">Signup</a></button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

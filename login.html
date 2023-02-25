@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="data">
+        <div class="header">
+            <h2 id="heading-name">Teacher Portal</h2>
+            <ul id="heading-links">
+                <li class="signup"><a href="signup.html">Signup</a></li>
+                <li class="login"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+       <div id="login-form">
+            <section class="container1" id="container1">
+                <header>Teachers Login</header>
+                <form action="dashboard.html" onclick="validateForm2(event); login(e);">        
+                    <div class="field email-field">
+                        <div class="input-field">
+                            <input type="email" placeholder="Enter your email" class="email" id="email">
+                        </div>
+                        <span class="error email-error">
+                            <p class="error-text email-errorText"></p>
+                        </span>
+                    </div>
+        
+                    <div class="field password-field">
+                        <div class="input-field">
+                            <input type="password" placeholder="Enter your Password" class="password" id="password">
+                        </div>
+                        <span class="error Password-error">
+                            <p class="error-text passError"></p>
+                        </span>
+                    </div>   
+                    <p class="error-message"></p>
+                </form>
+                <div class="input-field button" id="login">
+                    <button type="submit"><a href="dashboard.html">Login</a></button>
+                </div>
+                
+            </section>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
